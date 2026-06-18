@@ -5,8 +5,6 @@ async function connectToDb(){
     console.log("conenct to databse")}
     catch(err){
         console.log(err);
-        
-
     }
 }
 module.exports = connectToDb

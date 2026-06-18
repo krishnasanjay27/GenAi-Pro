@@ -15,3 +15,8 @@ const userSchema = new mongoose.Schema({
         required:true
     }
 })
+
+const userModel = mongoose.model("users",userSchema)
+// model() is a Mongoose function that creates a model from userSchema.
+// Documents created using this model will be stored in the "users" collection.
+module.exports=userModel
